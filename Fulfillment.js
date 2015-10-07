@@ -10,40 +10,40 @@ function main(){
 	var soUBAmount = new Array();
 
 	// Load Data from file cabinet
-	var accfileTransferIn 						= nlapiLoadFile(441134);
-	var accountfileTransferIn 					= accfileTransferIn.getValue();
-	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	soNumber 									= soNumber.concat(accountarrayTransferIn);
+	var accfileTransferIn 			= nlapiLoadFile(441134);
+	var accountfileTransferIn 		= accfileTransferIn.getValue();
+	var accountarrayTransferIn 		= accountfileTransferIn.split(",");
+	soNumber 				= soNumber.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 						= nlapiLoadFile(441135);
-	var accountfileTransferIn 					= accfileTransferIn.getValue();
-	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	soStatus 									= soStatus.concat(accountarrayTransferIn);
+	var accfileTransferIn 			= nlapiLoadFile(441135);
+	var accountfileTransferIn 		= accfileTransferIn.getValue();
+	var accountarrayTransferIn 		= accountfileTransferIn.split(",");
+	soStatus 				= soStatus.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 						= nlapiLoadFile(441136);
-	var accountfileTransferIn 					= accfileTransferIn.getValue();
-	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	soCDate 									= soCDate.concat(accountarrayTransferIn);
+	var accfileTransferIn 			= nlapiLoadFile(441136);
+	var accountfileTransferIn 		= accfileTransferIn.getValue();
+	var accountarrayTransferIn 		= accountfileTransferIn.split(",");
+	soCDate 				= soCDate.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 						= nlapiLoadFile(441137);
-	var accountfileTransferIn 					= accfileTransferIn.getValue();
-	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	soDDate 									= soDDate.concat(accountarrayTransferIn);
+	var accfileTransferIn 			= nlapiLoadFile(441137);
+	var accountfileTransferIn 		= accfileTransferIn.getValue();
+	var accountarrayTransferIn 		= accountfileTransferIn.split(",");
+	soDDate 				= soDDate.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 						= nlapiLoadFile(441138);
-	var accountfileTransferIn 					= accfileTransferIn.getValue();
-	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	soPayment 									= soPayment.concat(accountarrayTransferIn);
+	var accfileTransferIn 			= nlapiLoadFile(441138);
+	var accountfileTransferIn 		= accfileTransferIn.getValue();
+	var accountarrayTransferIn 		= accountfileTransferIn.split(",");
+	soPayment 				= soPayment.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 						= nlapiLoadFile(441139);
-	var accountfileTransferIn 					= accfileTransferIn.getValue();
-	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	soAmount 									= soAmount.concat(accountarrayTransferIn);
+	var accfileTransferIn 			= nlapiLoadFile(441139);
+	var accountfileTransferIn 		= accfileTransferIn.getValue();
+	var accountarrayTransferIn 		= accountfileTransferIn.split(",");
+	soAmount 				= soAmount.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 						= nlapiLoadFile(441140);
-	var accountfileTransferIn 					= accfileTransferIn.getValue();
-	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	soUBAmount 									= soUBAmount.concat(accountarrayTransferIn);
+	var accfileTransferIn 			= nlapiLoadFile(441140);
+	var accountfileTransferIn 		= accfileTransferIn.getValue();
+	var accountarrayTransferIn 		= accountfileTransferIn.split(",");
+	soUBAmount 				= soUBAmount.concat(accountarrayTransferIn);
 			
 	// Start HTML
 	html  = '<html>';
@@ -56,16 +56,16 @@ function main(){
 	html += '<body>';
 	
 	html += '<table class="sortable" id="datatable">' +
-				'<tr id="myTRWhite">' +
-					'<td id="myTDWhiteData"  align="center">Sales Order Number</td>' +
-					'<td id="myTDWhiteData"  align="center">Status</td>' +
-					'<td id="myTDWhiteData"  align="center">Sales Order Creation Date</td>' +
-					'<td id="myTDWhiteData"  align="center">Date Fulfilled</td>' +
-					'<td id="myTDWhiteData"  align="center">Fulfilled # of days later</td>' +
-					'<td id="myTDWhiteData"  align="center">Credit Card Used</td>' +
-					'<td id="myTDWhiteData"  align="center">Sales Order Amount</td>' +
-					'<td id="myTDWhiteData"  align="center">Unbilled Amount</td>' +
-				'</tr>';
+			'<tr id="myTRWhite">' +
+				'<td id="myTDWhiteData" align="center">Sales Order Number</td>' +
+				'<td id="myTDWhiteData" align="center">Status</td>' +
+				'<td id="myTDWhiteData" align="center">Sales Order Creation Date</td>' +
+				'<td id="myTDWhiteData" align="center">Date Fulfilled</td>' +
+				'<td id="myTDWhiteData" align="center">Fulfilled # of days later</td>' +
+				'<td id="myTDWhiteData" align="center">Credit Card Used</td>' +
+				'<td id="myTDWhiteData" align="center">Sales Order Amount</td>' +
+				'<td id="myTDWhiteData" align="center">Unbilled Amount</td>' +
+			'</tr>';
 	
 	// variables for totals
 	var totalSOA = Number(0);
@@ -113,15 +113,15 @@ function main(){
 		var diff = Math.floor((b - a) / msDay);
 			
 		html += '<tr>' +
-					'<td align="center">' + soNumber[x] + '</td>' + // SO Number
-					'<td align="center">' + soStatus[x] + '</td>' + // Status
-					'<td align="center">' + new Date(soCDate[x]).format('mm/dd/yyyy') + '</td>' + // SO Date
-					'<td align="center">' + new Date(soDDate[x]).format('mm/dd/yyyy') + '</td>' + // fulfilled Date
-					'<td align="center">' + diff + '</td>' + // Date difference
-					'<td align="center">' + pmt + '</td>' + // Payment Method
-					'<td align="center">$ ' + Number(soAmount[x]).toFixed(2) + '</td>' + // SO Amount
-					'<td align="center">$ ' + Number(soUBAmount[x]).toFixed(2) + '</td>' + // unbilled Amount
-				'</tr>';
+				'<td align="center">' + soNumber[x] + '</td>' + // SO Number
+				'<td align="center">' + soStatus[x] + '</td>' + // Status
+				'<td align="center">' + new Date(soCDate[x]).format('mm/dd/yyyy') + '</td>' + // SO Date
+				'<td align="center">' + new Date(soDDate[x]).format('mm/dd/yyyy') + '</td>' + // fulfilled Date
+				'<td align="center">' + diff + '</td>' + // Date difference
+				'<td align="center">' + pmt + '</td>' + // Payment Method
+				'<td align="center">$ ' + Number(soAmount[x]).toFixed(2) + '</td>' + // SO Amount
+				'<td align="center">$ ' + Number(soUBAmount[x]).toFixed(2) + '</td>' + // unbilled Amount
+			'</tr>';
 		
 		// add total to running total variable
 		totalSOA += Number(soAmount[x]);
@@ -131,20 +131,20 @@ function main(){
 		counter++;
 	}
 			// print total row
-	html += 		'<tr>' +
-						'<td  id="myTDWhiteDataz">-</td>' + // SO Number
-						'<td  id="myTDWhiteDataz">-</td>' + // Status
-						'<td  id="myTDWhiteDataz">-</td>' + // SO Date
-						'<td  id="myTDWhiteDataz">-</td>' + // fulfilled Date
-						'<td  id="myTDWhiteDataz">-</td>' + // Date difference
-						'<td  id="myTDWhiteDataz">-</td>' + // Payment Method
-						'<td  id="myTDWhiteDataz">$ ' + numberWithCommas(totalSOA.toFixed(2)) + '</td>' + // SO Amount
-						'<td  id="myTDWhiteDataz">$ ' + numberWithCommas(totalUBA.toFixed(2)) + '</td>' + // Unbilled Amount
-					'</tr>';
+	html += 	'<tr>' +
+				'<td  id="myTDWhiteDataz">-</td>' + // SO Number
+				'<td  id="myTDWhiteDataz">-</td>' + // Status
+				'<td  id="myTDWhiteDataz">-</td>' + // SO Date
+				'<td  id="myTDWhiteDataz">-</td>' + // fulfilled Date
+				'<td  id="myTDWhiteDataz">-</td>' + // Date difference
+				'<td  id="myTDWhiteDataz">-</td>' + // Payment Method
+				'<td  id="myTDWhiteDataz">$ ' + numberWithCommas(totalSOA.toFixed(2)) + '</td>' + // SO Amount
+				'<td  id="myTDWhiteDataz">$ ' + numberWithCommas(totalUBA.toFixed(2)) + '</td>' + // Unbilled Amount
+			'</tr>';
 	
 	html += '</table>';
 	html += '</body>' +
-			'</html>';
+		'</html>';
 	
 	var form2 = nlapiCreateForm('Credit Card/Paypal Fulfillment Report');
 
