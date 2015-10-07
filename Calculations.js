@@ -20,6 +20,7 @@ function function2()
 	var SOamountremaining = new Array();
 	var SOpaymentmethod = new Array();
 	var SOcreatedfrom = new Array();
+	
 	var IFtrandate = new Array();
 	var IFstatus = new Array();
 	var IFtranid = new Array();
@@ -32,105 +33,105 @@ function function2()
 	var IFcreatedfrom = new Array();
 
 	// Load SO and IF Data from file cabinet
-	var accfileTransferIn 					  	= nlapiLoadFile(440683);
+	var accfileTransferIn 						= nlapiLoadFile(440683);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	SOtrandate 									        = SOtrandate.concat(accountarrayTransferIn);
+	SOtrandate 									= SOtrandate.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 						  = nlapiLoadFile(440684);
+	var accfileTransferIn 						= nlapiLoadFile(440684);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	SOstatus 								          	= SOstatus.concat(accountarrayTransferIn);
+	SOstatus 									= SOstatus.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 					  	= nlapiLoadFile(440685);
+	var accfileTransferIn 						= nlapiLoadFile(440685);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	SOtranid 								          	= SOtranid.concat(accountarrayTransferIn);
+	SOtranid 									= SOtranid.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 					  	= nlapiLoadFile(440686);
+	var accfileTransferIn 						= nlapiLoadFile(440686);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	SOentity 								          	= SOentity.concat(accountarrayTransferIn);
+	SOentity 									= SOentity.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 					  	= nlapiLoadFile(440687);
+	var accfileTransferIn 						= nlapiLoadFile(440687);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	SOdatecreated 							      	= SOdatecreated.concat(accountarrayTransferIn);
+	SOdatecreated 								= SOdatecreated.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 					  	= nlapiLoadFile(440688);
+	var accfileTransferIn 						= nlapiLoadFile(440688);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	SOamount 									          = SOamount.concat(accountarrayTransferIn);
+	SOamount 									= SOamount.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 					  	= nlapiLoadFile(440689);
+	var accfileTransferIn 						= nlapiLoadFile(440689);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	SOamountbilled 							      	= SOamountbilled.concat(accountarrayTransferIn);
+	SOamountbilled 								= SOamountbilled.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 					  	= nlapiLoadFile(440688);
+	var accfileTransferIn 						= nlapiLoadFile(440688);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	SOamountremaining 						    	= SOamountremaining.concat(accountarrayTransferIn);
+	SOamountremaining 							= SOamountremaining.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 					  	= nlapiLoadFile(440691);
+	var accfileTransferIn 						= nlapiLoadFile(440691);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	SOpaymentmethod 						      	= SOpaymentmethod.concat(accountarrayTransferIn);
+	SOpaymentmethod 							= SOpaymentmethod.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 					  	= nlapiLoadFile(440806);
+	var accfileTransferIn 						= nlapiLoadFile(440806);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	SOcreatedfrom 							      	= SOcreatedfrom.concat(accountarrayTransferIn);
+	SOcreatedfrom 								= SOcreatedfrom.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 					  	= nlapiLoadFile(440583);
+	var accfileTransferIn 						= nlapiLoadFile(440583);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	IFtrandate 								        	= IFtrandate.concat(accountarrayTransferIn);
+	IFtrandate 									= IFtrandate.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 						  = nlapiLoadFile(440584);
+	var accfileTransferIn 						= nlapiLoadFile(440584);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	IFstatus 									          = IFstatus.concat(accountarrayTransferIn);
+	IFstatus 									= IFstatus.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 					  	= nlapiLoadFile(440585);
+	var accfileTransferIn 						= nlapiLoadFile(440585);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	IFtranid 								          	= IFtranid.concat(accountarrayTransferIn);
+	IFtranid 									= IFtranid.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 				  		= nlapiLoadFile(440586);
+	var accfileTransferIn 						= nlapiLoadFile(440586);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	IFentity 								          	= IFentity.concat(accountarrayTransferIn);
+	IFentity 									= IFentity.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 					  	= nlapiLoadFile(440587);
+	var accfileTransferIn 						= nlapiLoadFile(440587);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	IFdatecreated 							      	= IFdatecreated.concat(accountarrayTransferIn);
+	IFdatecreated 								= IFdatecreated.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 					  	= nlapiLoadFile(440588);
+	var accfileTransferIn 						= nlapiLoadFile(440588);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	IFamount 								            = IFamount.concat(accountarrayTransferIn);
+	IFamount 									= IFamount.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 			  			= nlapiLoadFile(440589);
+	var accfileTransferIn 						= nlapiLoadFile(440589);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	IFamountbilled 						      		= IFamountbilled.concat(accountarrayTransferIn);
+	IFamountbilled 								= IFamountbilled.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 					  	= nlapiLoadFile(440590);
+	var accfileTransferIn 						= nlapiLoadFile(440590);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	IFamountremaining 						     	= IFamountremaining.concat(accountarrayTransferIn);
+	IFamountremaining 							= IFamountremaining.concat(accountarrayTransferIn);
 	
-	var accfileTransferIn 				  		= nlapiLoadFile(440591);
+	var accfileTransferIn 						= nlapiLoadFile(440591);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	IFpaymentmethod 						      	= IFpaymentmethod.concat(accountarrayTransferIn);
+	IFpaymentmethod 							= IFpaymentmethod.concat(accountarrayTransferIn);
 		
-	var accfileTransferIn 				  		= nlapiLoadFile(440907);
+	var accfileTransferIn 						= nlapiLoadFile(440907);
 	var accountfileTransferIn 					= accfileTransferIn.getValue();
 	var accountarrayTransferIn 					= accountfileTransferIn.split(",");
-	IFcreatedfrom 							      	= IFcreatedfrom.concat(accountarrayTransferIn);
+	IFcreatedfrom 								= IFcreatedfrom.concat(accountarrayTransferIn);
 	
 	// Create variables to hold calculated values based on Sales Order #
 	w = window;
@@ -138,19 +139,19 @@ function function2()
 		
 		var cf = 'Sales Order #' + SOtranid[x];
 		
-		w['sonumber' + cf]        = '';
-		w['sostatus' + cf]        = '';
-		w['socdate' + cf]         = Number(0);
-		w['sofdate' + cf]         = Number(0);
-		w['sopayment' + cf]       = '';
-		w['soamt' + cf]           = Number(0);
-		w['sounbilledamt' + cf]   = Number(0);
-		w['soremainingamt' + cf]  = Number(0);
-		w['compdateSO' + cf]      = Number(0);
-		w['compdateIF' + cf]      = Number(0);
-		w['socreatedfrom' + cf]   = '';
-		w['ifcdate' + cf]         = Number(0);
-		w['ifcreatedfrom' + cf]   = '';
+		w['sonumber' + cf] = '';
+		w['sostatus' + cf] = '';
+		w['socdate' + cf] = Number(0);
+		w['sofdate' + cf] = Number(0);
+		w['sopayment' + cf] = '';
+		w['soamt' + cf] = Number(0);
+		w['sounbilledamt' + cf] = Number(0);
+		w['soremainingamt' + cf] = Number(0);
+		w['compdateSO' + cf] = Number(0);
+		w['compdateIF' + cf] = Number(0);
+		w['socreatedfrom' + cf] = '';
+		w['ifcdate' + cf] = Number(0);
+		w['ifcreatedfrom' + cf] = '';
 	}
 	
 	// Assign pre-calculated Sales Order data to variables
@@ -158,12 +159,12 @@ function function2()
 		
 		var cf = 'Sales Order #' + SOtranid[x];
 		
-		w['compdateSO' + cf]    = new Date(SOtrandate[x]);
-		w['sopayment' + cf]     = SOpaymentmethod[x];
-		w['sonumber' + cf]      = SOtranid[x];
-		w['sostatus' + cf]      = SOstatus[x];
-		w['socdate' + cf]       = new Date(SOtrandate[x]);
-		w['soamt' + cf]         = Number(SOamount[x]);	
+		w['compdateSO' + cf] = new Date(SOtrandate[x]);
+		w['sopayment' + cf] = SOpaymentmethod[x];
+		w['sonumber' + cf] = SOtranid[x];
+		w['sostatus' + cf] = SOstatus[x];
+		w['socdate' + cf] = new Date(SOtrandate[x]);
+		w['soamt' + cf] = Number(SOamount[x]);	
 		w['sounbilledamt' + cf] = Number(SOamountbilled[x]);
 		w['socreatedfrom' + cf] = SOcreatedfrom[x];
 	}
@@ -174,29 +175,29 @@ function function2()
 		// if statment to override current variable if new item fulfillments are dated earlier than the current values.
 		if(w['ifcdate' + IFcreatedfrom[x]] == Number(0)){		// if there has been no values assigned to the Item Fulfillment creation date variable yet number will == 0
 			
-			w['compdateIF' + IFcreatedfrom[x]]    = new Date(IFtrandate[x]);
-			w['ifcdate' + IFcreatedfrom[x]]       = new Date(IFtrandate[x]);	
+			w['compdateIF' + IFcreatedfrom[x]] = new Date(IFtrandate[x]);
+			w['ifcdate' + IFcreatedfrom[x]] = new Date(IFtrandate[x]);	
 			w['ifcreatedfrom' + IFcreatedfrom[x]] = IFcreatedfrom[x];	
 			
 		}else{
 			
 			if(new Date(w['ifcdate' + IFcreatedfrom[x]]) > new Date(IFtrandate[x])){  // if the current Item Fulfillment creation date is greater than the next item, override the current values.
 				
-				w['compdateIF' + IFcreatedfrom[x]]    = new Date(IFtrandate[x]);
-				w['ifcdate' + IFcreatedfrom[x]]       = new Date(IFtrandate[x]);	
+				w['compdateIF' + IFcreatedfrom[x]] = new Date(IFtrandate[x]);
+				w['ifcdate' + IFcreatedfrom[x]] = new Date(IFtrandate[x]);	
 				w['ifcreatedfrom' + IFcreatedfrom[x]] = IFcreatedfrom[x];	
 			}
 		}
 	}
 	
 	// Create arrays to store data in to file cabinet
-	var sonumberArray         = new Array();
-	var statusArray          = new Array();
-	var socreationArray      = new Array();
-	var datefulfilledArray   = new Array();
-	var paymentArray         = new Array();
-	var soamountArray        = new Array();
-	var unbilledamountArray  = new Array();
+	var sonumberArray = new Array();
+	var statusArray = new Array();
+	var socreationArray = new Array();
+	var datefulfilledArray = new Array();
+	var paymentArray = new Array();
+	var soamountArray = new Array();
+	var unbilledamountArray = new Array();
 	
 	// msDay used to calculate time difference between two dates
     var msDay = 60*60*24*1000;
@@ -213,37 +214,37 @@ function function2()
 				if(Number(IFcreatedfrom.indexOf(cf)) == Number(-1)){	// if sales order is not in the list of item fulfillments
 
 					// calculate date difference between SO and today
-					var b    = new Date()
-					var a    = new Date(w['compdateSO' + cf]);
+					var b = new Date()
+					var a = new Date(w['compdateSO' + cf]);
 					var diff = Math.floor((b - a) / msDay);
 					
 					if(Number(diff) > Number(3)){	// if there is more than 3 days between SO date and today
 												
-						sonumberArray        = sonumberArray.concat(w['sonumber' + SOentity[x]]);
-						statusArray          = statusArray.concat(w['sostatus' + SOentity[x]]);
-						socreationArray      = socreationArray.concat(w['socdate' + SOentity[x]]);
-						datefulfilledArray   = datefulfilledArray.concat('N/A');
-						paymentArray         = paymentArray.concat(w['sopayment' + SOentity[x]]);
-						soamountArray        = soamountArray.concat(w['soamt' + SOentity[x]]);
-						unbilledamountArray  = unbilledamountArray.concat(w['sounbilledamt' + SOentity[x]]);	
+						sonumberArray = sonumberArray.concat(w['sonumber' + SOentity[x]]);
+						statusArray = statusArray.concat(w['sostatus' + SOentity[x]]);
+						socreationArray = socreationArray.concat(w['socdate' + SOentity[x]]);
+						datefulfilledArray = datefulfilledArray.concat('N/A');
+						paymentArray = paymentArray.concat(w['sopayment' + SOentity[x]]);
+						soamountArray = soamountArray.concat(w['soamt' + SOentity[x]]);
+						unbilledamountArray = unbilledamountArray.concat(w['sounbilledamt' + SOentity[x]]);	
 						continue;						
 					}
 				}
 				
 				// calculate date difference between SO and IF date
-				var b    =  new Date(w['compdateIF' + cf]);
-				var a    = new Date(w['compdateSO' + cf]);
+				var b =  new Date(w['compdateIF' + cf]);
+				var a = new Date(w['compdateSO' + cf]);
 				var diff = Math.floor((b - a) / msDay);
 				
 				if(Number(diff) > Number(3)){ // if so is greater than 3 days after IF
 					
-					sonumberArray        = sonumberArray.concat(w['sonumber' + cf]);
-					statusArray          = statusArray.concat(w['sostatus' + cf]);
-					socreationArray      = socreationArray.concat(w['socdate' + cf]);
-					datefulfilledArray   = datefulfilledArray.concat(w['compdateIF' + cf]);
-					paymentArray         = paymentArray.concat(w['sopayment' + cf]);
-					soamountArray        = soamountArray.concat(w['soamt' + cf]);
-					unbilledamountArray  = unbilledamountArray.concat(w['sounbilledamt' + cf]);
+					sonumberArray = sonumberArray.concat(w['sonumber' + cf]);
+					statusArray = statusArray.concat(w['sostatus' + cf]);
+					socreationArray = socreationArray.concat(w['socdate' + cf]);
+					datefulfilledArray = datefulfilledArray.concat(w['compdateIF' + cf]);
+					paymentArray = paymentArray.concat(w['sopayment' + cf]);
+					soamountArray = soamountArray.concat(w['soamt' + cf]);
+					unbilledamountArray = unbilledamountArray.concat(w['sounbilledamt' + cf]);
 					continue;
 
 				}else if(Number(diff) <= Number(3)){ // if so is less than than 3 days after IF
@@ -256,6 +257,7 @@ function function2()
 			}catch(e){
 			
 			}
+			
 		}else if(w['sopayment' + cf] == '4' || w['sopayment' + cf] == '5' || w['sopayment' + cf] == '6' || w['sopayment' + cf] == '3'){ // Payment method is Credit Card (Amex, Visa, MasterCard, Discover)
 			
 			try{
@@ -263,37 +265,37 @@ function function2()
 				if(Number(IFcreatedfrom.indexOf(cf)) == Number(-1)){	// if sales order is not in the list of item fulfillments
 					
 					// calculate date difference between SO and today
-					var b    = new Date()
-					var a    = new Date(w['compdateSO' + cf]);
+					var b = new Date()
+					var a = new Date(w['compdateSO' + cf]);
 					var diff = Math.floor((b - a) / msDay);
 					
 					if(Number(diff) > Number(31)){	// if there is more than 31 days between SO date and today
 						
-						sonumberArray        = sonumberArray.concat(w['sonumber' + SOentity[x]]);
-						statusArray          = statusArray.concat(w['sostatus' + SOentity[x]]);
-						socreationArray      = socreationArray.concat(w['socdate' + SOentity[x]]);
-						datefulfilledArray   = datefulfilledArray.concat('N/A');
-						paymentArray         = paymentArray.concat(w['sopayment' + SOentity[x]]);
-						soamountArray        = soamountArray.concat(w['soamt' + SOentity[x]]);
-						unbilledamountArray  = unbilledamountArray.concat(w['sounbilledamt' + SOentity[x]]);	
+						sonumberArray = sonumberArray.concat(w['sonumber' + SOentity[x]]);
+						statusArray = statusArray.concat(w['sostatus' + SOentity[x]]);
+						socreationArray = socreationArray.concat(w['socdate' + SOentity[x]]);
+						datefulfilledArray = datefulfilledArray.concat('N/A');
+						paymentArray = paymentArray.concat(w['sopayment' + SOentity[x]]);
+						soamountArray = soamountArray.concat(w['soamt' + SOentity[x]]);
+						unbilledamountArray = unbilledamountArray.concat(w['sounbilledamt' + SOentity[x]]);	
 						continue;						
 					}
 				}
 				
 				// calculate date difference between SO and IF date
-				var b    =  new Date(w['compdateIF' + cf]);
-				var a    = new Date(w['compdateSO' + cf]);
+				var b =  new Date(w['compdateIF' + cf]);
+				var a = new Date(w['compdateSO' + cf]);
 				var diff = Math.floor((b - a) / msDay);
 				
 				if(Number(diff) > Number(31)){ // if so is greater than 31 days after IF
 					
-					sonumberArray        = sonumberArray.concat(w['sonumber' + cf]);
-					statusArray          = statusArray.concat(w['sostatus' + cf]);
-					socreationArray      = socreationArray.concat(w['socdate' + cf]);
-					datefulfilledArray   = datefulfilledArray.concat(w['compdateIF' + cf]);
-					paymentArray         = paymentArray.concat(w['sopayment' + cf]);
-					soamountArray        = soamountArray.concat(w['soamt' + cf]);
-					unbilledamountArray  = unbilledamountArray.concat(w['sounbilledamt' + cf]);
+					sonumberArray = sonumberArray.concat(w['sonumber' + cf]);
+					statusArray = statusArray.concat(w['sostatus' + cf]);
+					socreationArray = socreationArray.concat(w['socdate' + cf]);
+					datefulfilledArray = datefulfilledArray.concat(w['compdateIF' + cf]);
+					paymentArray = paymentArray.concat(w['sopayment' + cf]);
+					soamountArray = soamountArray.concat(w['soamt' + cf]);
+					unbilledamountArray = unbilledamountArray.concat(w['sounbilledamt' + cf]);
 					continue;
 
 				}else if(Number(diff) <= Number(31)){ // if so is less than than 31 days after IF
@@ -343,6 +345,14 @@ function function2()
 	Function: print()
 	Purpose:  Execution logs
 -------------------------------------------------------------------------------------------------*/
+function print(name, value)
+{	
+	var context        = nlapiGetContext();
+	var usageRemaining = context.getRemainingUsage();
+	nlapiLogExecution ('DEBUG', name + ' | ' + usageRemaining, value);
+}
+
+
 var dateFormat = function () {
     var    token = /d{1,4}|m{1,4}|yy(?:yy)?|([HhMsTt])\1?|[LloSZ]|"[^"]*"|'[^']*'/g,
         timezone = /\b(?:[PMCEA][SDP]T|(?:Pacific|Mountain|Central|Eastern|Atlantic) (?:Standard|Daylight|Prevailing) Time|(?:GMT|UTC)(?:[-+]\d{4})?)\b/g,
