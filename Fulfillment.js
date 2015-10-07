@@ -1,27 +1,4 @@
-function main(request, response)	// initial function called as default function in script
-{	
-	if(request.getMethod() == 'GET')	// as script is run
-	{
-		function2();
-	}
-	else								// after submit
-	{
-		//function2();
-	}
-}
-
-function function1() 
-{
-
-	var form = nlapiCreateForm('Pending Billing Report');
-	form.addField('date_start', 'date', 'Start Date').setDefaultValue('1/1/2015');
-		
-	form.addSubmitButton('Submit');
-	response.writePage(form);
-
-}
-function function2() 
-{
+function main(){
 	
 	// Create storage locations for data stored in file cabinet
 	var soNumber = new Array();
