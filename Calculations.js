@@ -299,9 +299,10 @@ function function2()
 					continue;
 
 				}else if(Number(diff) <= Number(31)){ // if so is less than than 31 days after IF
-					
+					/*  Removed for debugging
 					var b =  new Date(w['compdateIF' + cf]);
 					var a = new Date(w['compdateSO' + cf]);
+					*/
 					continue;
 					
 				}
